@@ -6,7 +6,19 @@ export default function Portfolio() {
     return (
         <>
             <div id="portfolio">
-                <h2>Test</h2>
+                <h2>My Projects</h2>
+                <div id="portfolio-showcase">
+                    <div className="portfolio-box">
+                        <p>Picture Here</p>
+                    </div>
+                    <div className="portfolio-box">
+                        <p>Picture Here</p>
+                    </div>
+                    <div className="portfolio-box">
+                        <p>Picture Here</p>
+                    </div>
+
+                </div>
             </div>
         </>
     )
