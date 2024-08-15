@@ -1,5 +1,4 @@
 #banner {
-    height: 400px;
     position: relative;
     width: 100%;
     background: #111;
@@ -9,14 +8,15 @@
     z-index: 1;
 }
 
-
-
-.large-header {
-    position: relative;
-    width: 100%;
-    background: #111;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
- }
+#banner-header {
+    position: absolute;
+    margin: 0;
+    padding: 5;
+    color: #F9F1E9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-40%, -30%, 0);
+    transform: translate3d(-40%, -30%, 0);
+    border: 1px solid white;
+}
