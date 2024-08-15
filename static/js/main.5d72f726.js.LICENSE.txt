@@ -105,5 +105,3 @@ PERFORMANCE OF THIS SOFTWARE.
  *
  * @license MIT
  */
-
-//!
