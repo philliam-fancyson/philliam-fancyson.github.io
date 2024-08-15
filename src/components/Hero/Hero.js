@@ -1,26 +1,17 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { TweenLite } from 'gsap/gsap-core';
 import { Tween } from 'gsap/gsap-core';
-import { EasePack } from 'gsap/all';
-import './Banner.css'
+import './Hero.css'
 
 
-export default function Banner() {
+export default function Hero() {
     gsap.registerPlugin(useGSAP);
-    const container = useRef();
 
-    // !
-
-
-    //!
     useGSAP(
         () => {
             // gsap code here...
-                let width, height, banner, canvas, ctx, points, target, animateHeader = true;
+                let width, height, hero, canvas, ctx, points, target, animateHeader = true;
 
                 // Main
                 initHeader();
@@ -32,10 +23,10 @@ export default function Banner() {
                     height = window.innerHeight;
                     target = {x: width/2, y: height/2};
 
-                    banner = document.getElementById('banner');
-                    banner.style.height = height+'px';
+                    hero = document.getElementById('hero');
+                    hero.style.height = height+'px';
 
-                    canvas = document.getElementById('banner-canvas');
+                    canvas = document.getElementById('hero-canvas');
                     canvas.width = width;
                     canvas.height = height;
                     ctx = canvas.getContext('2d');
@@ -120,7 +111,7 @@ export default function Banner() {
                 function resize() {
                     width = window.innerWidth;
                     height = window.innerHeight;
-                    banner.style.height = height+'px';
+                    hero.style.height = height+'px';
                     canvas.width = width;
                     canvas.height = height;
                 }
@@ -207,9 +198,9 @@ export default function Banner() {
 
     return (
         <>
-            <div id="banner">
-                <canvas id="banner-canvas"></canvas>
-                <div id="banner-header">
+            <div id="hero">
+                <canvas id="hero-canvas"></canvas>
+                <div id="hero-header">
 					<h2>Hello, Phillip here.</h2>
                     <p>
                         Software Engineer

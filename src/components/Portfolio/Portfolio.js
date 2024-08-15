@@ -6,7 +6,7 @@ export default function Portfolio() {
     return (
         <>
             <div id="portfolio">
-                <h2>My Projects</h2>
+                <h2>Projects</h2>
                 <div id="portfolio-showcase">
                     <div className="portfolio-box">
                         <p>Picture Here</p>

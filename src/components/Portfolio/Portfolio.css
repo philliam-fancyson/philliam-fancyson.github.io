@@ -1,3 +1,26 @@
 #portfolio {
-    max-height: 1000px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    h2 {
+        text-align: center;
+        color: #F9F1E9;
+    }
+}
+
+#portfolio-showcase {
+    display: flex;
+    color: #F9F1E9;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 5vh;
+
+}
+
+.portfolio-box {
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
 }
