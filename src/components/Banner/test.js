@@ -1,13 +1,3 @@
-import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import { useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { TweenLite } from 'gsap/gsap-core';
-import { EasePack } from 'gsap/all';
-import './Banner.css'
-
-
 export default function Banner() {
     gsap.registerPlugin(useGSAP);
     const container = useRef();
