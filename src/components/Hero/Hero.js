@@ -128,7 +128,7 @@ export default function Hero() {
                         ctx.clearRect(0,0,width,height);
                         for(let i in points) {
                             // detect points in range
-                            if(Math.abs(getDistance(target, points[i])) < 4000) {
+                            if(Math.abs(getDistance(target, points[i])) < 8000) {
                                 points[i].active = 0.3;
                                 points[i].circle.active = 0.6;
                             } else if(Math.abs(getDistance(target, points[i])) < 20000) {
