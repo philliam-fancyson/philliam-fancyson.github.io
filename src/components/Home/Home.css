@@ -8,15 +8,11 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     color: #F9F1E9;
     font-size: 2rem;
+    z-index: 1;
 
     a {
-        text-decoration: none;
         color: #F9F1E9;
         font-size: 2rem;
-    }
-
-    .link-category {
-        margin-left: 2rem;
     }
 }
 
@@ -24,7 +20,13 @@
     letter-spacing: 1px;
 }
 
-.home-wrapper {
+.link-category {
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #F3613D;
+}
+
+#home-wrapper {
     background-color: #111;
 
     h2 {
@@ -36,7 +38,15 @@
     p {
         color: #F9F1E9;
     }
+
+    canvas {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        pointer-events: none;
+    }
 }
+
 
 #footer-container-sticky {
     position: sticky;
