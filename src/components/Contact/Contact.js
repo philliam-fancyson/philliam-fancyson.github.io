@@ -11,6 +11,7 @@ export default function Contact() {
     return (
         <>
             <div id="contact">
+                <h2>Get in touch!</h2>
                 <form
                 action="https://formspree.io/f/xdkndnvv"
                 method="POST"

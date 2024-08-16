@@ -30,15 +30,18 @@ export default function Home() {
                 <Portfolio />
                 <Contact />
             </div>
+
+
             <div id="footer-container-sticky">
+                <div id="footer-closing-tag">
                     <span className="name-tag"> &lt;</span>
                     <NavLink className="name-header" to="/">/ NGUYEN</NavLink>
                     <span className="name-tag">&gt;</span>
+                </div>
             </div>
             <footer>
                 Phillip Nguyen @2024
             </footer>
-
 
         </>
     )

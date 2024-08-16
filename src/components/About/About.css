@@ -2,16 +2,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #111;;
 
     h2 {
         text-align: center;
-        color: #F9F1E9;
     }
     p {
         margin: 50px;
         font-size: 20px;
-        color: #F9F1E9;
     }
 }
 

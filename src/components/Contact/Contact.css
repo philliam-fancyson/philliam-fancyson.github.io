@@ -1,0 +1,15 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+
+    label {
+        color: #F9F1E9;
+    }
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
