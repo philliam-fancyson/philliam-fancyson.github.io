@@ -15,20 +15,14 @@ export default function Contact() {
                 <form
                 action="https://formspree.io/f/xdkndnvv"
                 method="POST"
+                id="contact-form"
                 // onSubmit={handleSubmit}
                 >
-                    <label>
-                        Name:
-                        <input type="name" name="name" />
-                    </label>
-                    <label>
-                        Your email:
-                        <input type="email" name="email" />
-                    </label>
-                    <label>
-                        Your message:
-                        <textarea name="message"></textarea>
-                    </label>
+                    <div id="contact-id">
+                        <input type="email" name="email" placeholder='Email'/>
+                        <input type="name" name="name" placeholder='Name'/>
+                    </div>
+                    <textarea name="message" placeholder="Your Message"></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>

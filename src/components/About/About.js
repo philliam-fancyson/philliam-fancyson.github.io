@@ -11,7 +11,7 @@ export default function About() {
                     Always thinking about how to make life exciting, I'm a full-stack developer who's passionate about crafting sophisticated, elegant, and creative solutions. I love exploring ways to innovate on things I deeply care about. To me, programming is the perfect blend of creativity , and structure. The front end is my canvas, where I unleash my imagination and the backend grounds me, providing the logic and structure to bring my ideas to life. Web development allows me to express creativity both logically and visually, making it the perfect outlet for my skills.
                     <br />
                     <br />
-                    In my free time, you can find me sending cool bouldering problems, testing my reactions in fighting games, or immersing myself in music.
+                    In my free time, you can find me sending bouldering problems, testing my reactions in fighting games, or immersing myself in live music.
                 </p>
                 <div className="tech-container">
                     <div id="tech">
