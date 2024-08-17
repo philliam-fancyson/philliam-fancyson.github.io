@@ -6,18 +6,13 @@ export default function Portfolio() {
     return (
         <>
             <div id="portfolio">
-                <h2>Projects</h2>
                 <div id="portfolio-showcase">
                     <div className="portfolio-box">
                         <p>Picture Here</p>
                     </div>
-                    <div className="portfolio-box">
+                    <div className="portfolio-box-reverse">
                         <p>Picture Here</p>
                     </div>
-                    <div className="portfolio-box">
-                        <p>Picture Here</p>
-                    </div>
-
                 </div>
             </div>
         </>

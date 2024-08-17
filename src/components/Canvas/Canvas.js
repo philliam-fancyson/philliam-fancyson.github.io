@@ -216,7 +216,7 @@ function getDistance(p1, p2) {
 }
 
 export function homeCanvas() {
-    const STAR_COLOR = '#9cd9f9d9';
+    const STAR_COLOR = '#AFDDE5';
     const STAR_SIZE = 1;
     const STAR_MIN_SCALE = 0.5;
     const OVERFLOW_THRESHOLD = 50;

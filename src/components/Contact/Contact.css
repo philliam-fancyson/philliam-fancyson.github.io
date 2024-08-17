@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     height: 80vh;
-
+    background-color: #505394;
+    scroll-margin-top: 50px;
     label {
         color: #F9F1E9;
     }

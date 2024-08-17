@@ -62,11 +62,11 @@
     #hero-about {
         width: 15rem;
         cursor: pointer;
-        border: 3px solid #F3613D;
+        border: 3px solid 964737;
+        color: #F3613D;
         padding: 5px 5px;
         position: relative;
         margin-top: 20px;
-        color: #F3613D;
         animation: fadeSlideInY 1s forwards;
         animation-delay: 0.9s;
         opacity: 0;
