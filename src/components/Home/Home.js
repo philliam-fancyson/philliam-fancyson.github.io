@@ -17,15 +17,17 @@ export default function Home() {
     useGSAP(() => {
         homeCanvas();
         let about = document.getElementById("home-wrapper")
+        let hero = document.getElementById('hero')
         console.log(about);
         let stickyHeader = document.getElementById("header-container-sticky")
         gsap.to(stickyHeader, {
             backgroundColor: "#2f3841",
             scrollTrigger: {
-                trigger: about,
-                start: "top top+=60px",
-                end: "top top-=40px",
+                trigger: hero,
+                start: "bottom top+=60px",
+                end: "bottom top",
                 scrub: true,
+                toggleActions: "restart none none reverse"
             }
           });
         gsap.to(".link-category", {
@@ -34,6 +36,7 @@ export default function Home() {
                 start: "top top+=60px",
                 end: "top top-=40px",
                 trigger: stickyHeader,
+                toggleActions: "restart none none reverse"
             }
           });
     })
