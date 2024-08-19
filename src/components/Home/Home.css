@@ -63,13 +63,43 @@ footer {
     height: 30vh;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #2f3841;
     /* z-index: 33; */
 
 }
 
-#footer-closing-tag {
-    margin-right: 2rem;
+#spacer {
+    width: 33%
+}
+
+#footer-links {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F9F1E9;
+    letter-spacing: 0.075em;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+#footer-links-icon {
     margin-top: 20px;
+    width: 100%;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-closing-tag {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+    margin-top: 20px;
+
+    .link-category {
+        margin-right: 2rem;
+    }
 }

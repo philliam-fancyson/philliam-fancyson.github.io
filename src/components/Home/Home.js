@@ -94,6 +94,14 @@ export default function Home() {
 
 
             <footer>
+                <div id="spacer" />
+                <span id = "footer-links">
+                    EMAIL: philliam.nguyen@gmail.com
+                    <div id="footer-links-icon">
+                        <i class="devicon-github-original"></i>
+                        <i class="devicon-linkedin-plain"></i>
+                    </div>
+                </span>
                 <div id="footer-closing-tag">
                     <span className="link-category">
                         <span className="name-tag"> &lt;</span>
@@ -101,6 +109,7 @@ export default function Home() {
                         <span className="name-tag">&gt;</span>
                     </span>
                 </div>
+
             </footer>
 
         </>
