@@ -5,17 +5,37 @@ import Hero from '../Hero';
 import Contact from '../Contact';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import './Home.css'
+import { ScrollTrigger } from 'gsap/all';
 import { homeCanvas } from '../Canvas/Canvas';
+import './Home.css'
 
 export default function Home() {
 
     gsap.registerPlugin(useGSAP);
-
-
+    gsap.registerPlugin(ScrollTrigger);
 
     useGSAP(() => {
         homeCanvas();
+        let about = document.getElementById("home-wrapper")
+        console.log(about);
+        let stickyHeader = document.getElementById("header-container-sticky")
+        gsap.to(stickyHeader, {
+            backgroundColor: "#2f3841",
+            scrollTrigger: {
+                trigger: about,
+                start: "top top+=60px",
+                end: "top top-=40px",
+                scrub: true,
+            }
+          });
+        gsap.to(".link-category", {
+            opacity: 1,
+            scrollTrigger: {
+                start: "top top+=60px",
+                end: "top top-=40px",
+                trigger: stickyHeader,
+            }
+          });
     })
 
     const scrollToHero = () => {

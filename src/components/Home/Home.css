@@ -1,7 +1,7 @@
 #header-container-sticky {
     position: sticky;
     top:0;
-    background-color: #2f3841;
+    background-color: #111;
     height: 50px;
     display: flex;
     align-items: center;
@@ -23,20 +23,26 @@
     margin-left: 2rem;
     cursor: pointer;
     color: #FFFFFF;
+    opacity:0;
 }
 
 #home-wrapper {
     h2 {
         font-size: 1.35em;
-        margin-top: 100px;
+        margin-top: 120px;
         color: #FFFFFF;
         letter-spacing: 0.225em;
+        overflow: hidden;
     }
 
-    h2::after {
-        content: '';
-        display: block;
-        height: 1px;
+    h2:after {
+        content: "";
+        display: flex;
+        vertical-align: bottom;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        border-top: 0.1px solid #191b1d41;
     }
 
     p {
