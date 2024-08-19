@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import About from '../About';
 import Portfolio from '../Portfolio';
 import Hero from '../Hero';
@@ -98,8 +99,8 @@ export default function Home() {
                 <span id = "footer-links">
                     EMAIL: philliam.nguyen@gmail.com
                     <div id="footer-links-icon">
-                        <i class="devicon-github-original"></i>
-                        <i class="devicon-linkedin-plain"></i>
+                        <NavLink to="https://github.com/philliam-fancyson" target="_blank"><i class="devicon-github-original"></i></NavLink>
+                        <NavLink to="https://www.linkedin.com/in/phillnguyen/" target="_blank"><i class="devicon-linkedin-plain"></i></NavLink>
                     </div>
                 </span>
                 <div id="footer-closing-tag">
