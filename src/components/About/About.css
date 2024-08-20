@@ -4,19 +4,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-margin-top: 50px;
-
     h2 {
         text-align: center;
     }
     p {
-        margin: 10px 100px;
+        margin: 10px 50px;
         font-size: 17px;
         text-align: justify;
     }
+
+    .professional-links {
+        width: 20%;
+    }
 }
 
-#tech {
+#about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tech-container {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

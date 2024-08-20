@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import About from '../About';
 import Portfolio from '../Portfolio';
@@ -11,21 +11,18 @@ import { homeCanvas } from '../Canvas/Canvas';
 import './Home.css'
 
 export default function Home() {
-
     gsap.registerPlugin(useGSAP);
     gsap.registerPlugin(ScrollTrigger);
 
     useGSAP(() => {
         homeCanvas();
-        let about = document.getElementById("home-wrapper")
         let hero = document.getElementById('hero')
-        console.log(about);
         let stickyHeader = document.getElementById("header-container-sticky")
         gsap.to(stickyHeader, {
             backgroundColor: "#2f3841",
             scrollTrigger: {
                 trigger: hero,
-                start: "bottom top+=60px",
+                start: "bottom top+=50px",
                 end: "bottom top",
                 scrub: true,
                 toggleActions: "restart none none reverse"
@@ -34,9 +31,9 @@ export default function Home() {
         gsap.to(".link-category", {
             opacity: 1,
             scrollTrigger: {
-                start: "top top+=60px",
-                end: "top top-=40px",
-                trigger: stickyHeader,
+                trigger: hero,
+                start: "bottom top+=50px",
+                end: "bottom top",
                 toggleActions: "restart none none reverse"
             }
           });
@@ -98,9 +95,9 @@ export default function Home() {
                 <div id="spacer" />
                 <span id = "footer-links">
                     EMAIL: philliam.nguyen@gmail.com
-                    <div id="footer-links-icon">
-                        <NavLink to="https://github.com/philliam-fancyson" target="_blank"><i class="devicon-github-original"></i></NavLink>
-                        <NavLink to="https://www.linkedin.com/in/phillnguyen/" target="_blank"><i class="devicon-linkedin-plain"></i></NavLink>
+                    <div className="professional-links">
+                        <NavLink to="https://github.com/philliam-fancyson" target="_blank"><i className="devicon-github-original"></i></NavLink>
+                        <NavLink to="https://www.linkedin.com/in/phillnguyen/" target="_blank"><i className="devicon-linkedin-plain"></i></NavLink>
                     </div>
                 </span>
                 <div id="footer-closing-tag">

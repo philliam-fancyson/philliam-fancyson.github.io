@@ -26,10 +26,13 @@
     opacity:0;
 }
 
+
 #home-wrapper {
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 50px;
     h2 {
         font-size: 1.35em;
-        margin-top: 100px;
+        margin-top: 50px;
         color: #FFFFFF;
         letter-spacing: 0.225em;
         overflow: hidden;
@@ -39,7 +42,7 @@
         content: "";
         display: flex;
         vertical-align: bottom;
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 40px;
         width: 100%;
         border-top: 0.1px solid #191b1d41;
@@ -56,6 +59,13 @@
         height: 100vh;
         pointer-events: none;
     }
+
+}
+
+#home-wrapper > #about, #portfolio, #contact {
+    /* scroll-snap-align: start; */
+    scroll-snap-stop: always;
+    scroll-margin-top: 50px;
 }
 
 footer {
@@ -85,7 +95,7 @@ footer {
     font-size: 17px;
 }
 
-#footer-links-icon {
+.professional-links {
     margin-top: 30px;
     width: 100%;
     font-size: x-large;
