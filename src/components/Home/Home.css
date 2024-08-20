@@ -31,8 +31,8 @@
     scroll-snap-type: y proximity;
     scroll-padding-top: 50px;
     h2 {
-        font-size: 1.35em;
-        margin-top: 50px;
+        font-size: 1.75em;
+        margin-top: 3.125rem;
         color: #FFFFFF;
         letter-spacing: 0.225em;
         overflow: hidden;
@@ -92,7 +92,7 @@ footer {
     color: #F9F1E9;
     letter-spacing: 0.075em;
     margin-bottom: 70px;
-    font-size: 17px;
+    font-size: 1.25rem;
 }
 
 .professional-links {
