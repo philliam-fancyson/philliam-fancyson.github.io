@@ -8,7 +8,9 @@ export default function Portfolio() {
             <div id="portfolio">
                 <div id="portfolio-showcase">
                     <div className="portfolio-box">
-                        <p>Picture Here</p>
+                        <div class="portfolio-image">
+                            <img src="https://pinpix-bucket.s3.us-west-1.amazonaws.com/PinPix-snapshot1.png" />
+                        </div>
                     </div>
                     <div className="portfolio-box-reverse">
                         <p>Picture Here</p>
