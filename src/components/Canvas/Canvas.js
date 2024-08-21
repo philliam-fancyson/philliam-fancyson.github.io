@@ -220,7 +220,7 @@ export function homeCanvas() {
     const STAR_SIZE = 1;
     const STAR_MIN_SCALE = 0.5;
     const OVERFLOW_THRESHOLD = 50;
-    const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 20;
+    const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 30;
 
     const canvas = document.getElementById( 'home-canvas' ),
           context = canvas.getContext( '2d' );
