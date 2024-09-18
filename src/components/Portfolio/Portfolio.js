@@ -19,10 +19,10 @@ export default function Portfolio() {
                             </p>
                             <div className="portfolio-links">
                                 <span>
-                                <NavLink to=""><i className="devicon-github-original portfolio-icon"></i>Github</NavLink>
+                                <NavLink to="https://github.com/philliam-fancyson/pinpix" target="_blank"><i className="devicon-github-original portfolio-icon"></i>Github</NavLink>
                                 </span>
                                 <span>
-                                <NavLink to=""><CgWebsite className="portfolio-icon"/>Live Site</NavLink>
+                                <NavLink to="https://pinpix.onrender.com/" target="_blank"><CgWebsite className="portfolio-icon"/>Live Site</NavLink>
                                 </span>
                             </div>
                         </div>
@@ -38,10 +38,10 @@ export default function Portfolio() {
                             </p>
                             <div className="portfolio-links">
                                 <span>
-                                <NavLink to=""><i className="devicon-github-original portfolio-icon"></i>Github</NavLink>
+                                <NavLink to="https://github.com/rileybona/sharesage" target="_blank"><i className="devicon-github-original portfolio-icon"></i>Github</NavLink>
                                 </span>
                                 <span>
-                                <NavLink to=""><CgWebsite className="portfolio-icon"/>Live Site</NavLink>
+                                <NavLink to="https://sharesage.onrender.com/" target="_blank"><CgWebsite className="portfolio-icon"/>Live Site</NavLink>
                                 </span>
                             </div>
                         </div>
